@@ -1,16 +1,68 @@
-## Hi there 👋
+# Hi, I'm Rabby 👋
 
-<!--
-**mrabbyilyas/mrabbyilyas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🚀 **AI-Focused Full-Stack Engineer**  
+I build real-world, production-ready web apps using **TypeScript, modern frontend frameworks, and applied AI**.
 
-Here are some ideas to get you started:
+I enjoy turning complex ideas into clean, usable products — especially SaaS tools, AI-assisted systems, and data-driven apps.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 🧠 What I’m Working On
+- AI-powered SaaS & internal tools
+- LLM integrations (text, documents, voice)
+- End-to-end full-stack development
+- Rapid prototyping → iteration → deployment
+
+---
+
+## 🛠 Tech Stack
+
+**Languages**
+- TypeScript
+- JavaScript
+- Python
+
+**Frontend**
+- React
+- Modern UI frameworks
+- Responsive & product-focused UI
+
+**Backend & Data**
+- Node.js
+- REST APIs
+- Database-driven applications
+
+**AI / ML (Applied)**
+- LLM integrations (prompting, structured outputs)
+- AI-assisted workflows (document drafting, lead gen, agents)
+- Practical AI for business use cases
+
+---
+
+## 🚀 Selected Projects
+
+🔹 **Lead Generation SaaS**  
+AI-assisted lead generation and processing system  
+→ Focus on automation, data flow, and scalability  
+
+🔹 **AI Legal Drafting Tool**  
+AI-powered legal document drafting assistant  
+→ Structured outputs & real use-case constraints  
+
+🔹 **Gemini Voice Agent (Experimental)**  
+Voice-based AI interaction prototype  
+→ Exploring real-time AI & conversational UX
+
+---
+
+## 📈 Highlights
+- 400+ GitHub contributions in the last year
+- Strong focus on **real projects**, not just demos
+- Comfortable shipping features end-to-end
+- Curious, fast learner, and product-oriented
+
+---
+
+## 📫 Let’s Connect
+- GitHub: https://github.com/mrabbyilyas
+- Email: your-email@example.com
