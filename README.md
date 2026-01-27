@@ -1,3 +1,11 @@
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AI-000000?style=flat&logo=openai&logoColor=white"/>
+</p>
+
+
 # Hi, I'm Rabby 👋
 
 🚀 **AI-Focused Full-Stack Engineer**  
