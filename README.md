@@ -1,80 +1,100 @@
+<!-- Typing header -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=550&lines=AI-Focused+Full-Stack+Engineer;Building+Real-World+AI+Products;TypeScript+%7C+AI+%7C+SaaS" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Rabby+%F0%9F%91%8B;AI-Focused+Full-Stack+Engineer;Shipping+TypeScript+%2B+AI+Products;SaaS+%7C+LLM+Workflows+%7C+Agents" alt="Typing SVG" />
+</p>
+
+<!-- quick intro -->
+<p align="center">
+  <b>AI-Focused Full-Stack Engineer</b><br/>
+  I build production-ready web apps with <b>TypeScript</b> + practical <b>AI</b> (text, docs, voice).
+</p>
+
+<!-- chips -->
+<p align="center">
+  <kbd>TypeScript</kbd>
+  <kbd>React</kbd>
+  <kbd>Node.js</kbd>
+  <kbd>LLM Apps</kbd>
+  <kbd>SaaS</kbd>
+</p>
+
+<!-- links -->
+<p align="center">
+  <a href="https://github.com/mrabbyilyas">GitHub</a> ·
+  <a href="https://linkedin.com/in/rabbyilyas">LinkedIn</a> ·
+  <a href="mailto:your-email@example.com">Email</a> ·
+  <a href="https://sclook.vercel.app/">Demos</a>
+</p>
+
+<hr/>
+
+<!-- mini cards -->
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ What I do</h3>
+      <ul>
+        <li>Ship <b>clean, production-ready</b> web apps (not toy demos)</li>
+        <li>Build <b>AI workflows</b>: drafting, lead-gen, agents</li>
+        <li>Rapid MVP → iterate → deploy</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🧩 Focus</h3>
+      <ul>
+        <li><b>Applied AI</b> with structured outputs</li>
+        <li><b>Data + automation</b> pipelines</li>
+        <li><b>Product UX</b> for real users</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<!-- featured projects -->
+<h3>🚀 Featured Projects</h3>
+
+<table>
+  <tr>
+    <td valign="top">
+      <b>Lead Gen SaaS</b><br/>
+      AI-assisted lead processing + follow-ups<br/>
+      <sub>automation · data flow · scalability</sub>
+    </td>
+    <td valign="top">
+      <b>AI Legal Drafting</b><br/>
+      Drafting assistant with structured outputs<br/>
+      <sub>constraints · real-world formatting</sub>
+    </td>
+    <td valign="top">
+      <b>Gemini Voice Agent</b><br/>
+      Experimental voice-based conversational UX<br/>
+      <sub>latency · realtime interaction</sub>
+    </td>
+  </tr>
+</table>
+
+<!-- stats row (subtle) -->
+<p align="center">
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=mrabbyilyas&show_icons=true&hide_title=true&hide_rank=true" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mrabbyilyas&layout=compact" />
+  <img height="160" src="https://streak-stats.demolab.com/?user=mrabbyilyas&amp;cache_seconds=86400" />
+
 </p>
 
 
-<p>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white"/>
-  <img src="https://img.shields.io/badge/AI-000000?style=flat&logo=openai&logoColor=white"/>
+<!-- clean collapsible -->
+<details>
+  <summary><b>🛠 Tech Stack (details)</b></summary>
+  <br/>
+  <ul>
+    <li><b>Frontend:</b> React, modern UI frameworks</li>
+    <li><b>Backend:</b> Node.js, REST APIs</li>
+    <li><b>Languages:</b> TypeScript, JavaScript, Python</li>
+    <li><b>AI:</b> LLM integrations (text/docs/voice), structured outputs, applied workflows</li>
+  </ul>
+</details>
+
+<!-- footer -->
+<p align="center">
+  <i>Prefer building things people actually use.</i>
 </p>
-
-# Hi, I'm Rabby 👋
-
-🚀 **AI-Focused Full-Stack Engineer**  
-I build real-world, production-ready web apps using **TypeScript, modern frontend frameworks, and applied AI**.
-
-I enjoy turning complex ideas into clean, usable products — especially SaaS tools, AI-assisted systems, and data-driven apps.
-
----
-
-## 🧠 What I’m Working On
-- AI-powered SaaS & internal tools
-- LLM integrations (text, documents, voice)
-- End-to-end full-stack development
-- Rapid prototyping → iteration → deployment
-
----
-
-## 🛠 Tech Stack
-
-**Languages**
-- TypeScript
-- JavaScript
-- Python
-
-**Frontend**
-- React
-- Modern UI frameworks
-- Responsive & product-focused UI
-
-**Backend & Data**
-- Node.js
-- REST APIs
-- Database-driven applications
-
-**AI / ML (Applied)**
-- LLM integrations (prompting, structured outputs)
-- AI-assisted workflows (document drafting, lead gen, agents)
-- Practical AI for business use cases
-
----
-
-## 🚀 Selected Projects
-
-🔹 **Lead Generation SaaS**  
-AI-assisted lead generation and processing system  
-→ Focus on automation, data flow, and scalability  
-
-🔹 **AI Legal Drafting Tool**  
-AI-powered legal document drafting assistant  
-→ Structured outputs & real use-case constraints  
-
-🔹 **Gemini Voice Agent (Experimental)**  
-Voice-based AI interaction prototype  
-→ Exploring real-time AI & conversational UX
-
----
-
-## 📈 Highlights
-- 400+ GitHub contributions in the last year
-- Strong focus on **real projects**, not just demos
-- Comfortable shipping features end-to-end
-- Curious, fast learner, and product-oriented
-
----
-
-## 📫 Let’s Connect
-- GitHub: https://github.com/mrabbyilyas
-- Email: your-email@example.com
