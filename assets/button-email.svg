@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 44" width="108" height="44" role="img" aria-label="Email"><title>Email</title><style>@font-face{font-family:'mono';src:url(data:font/woff2;base64,d09GMgABAAAAAANEAA8AAAAABnQAAALrAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbHhwoBmA/U1RBVEQAVBEICoIYgVcLEAABNgIkAxIEIAWEQAcgGx4FyAQCqrOqO51kAcwCPghz4CyRPT4FPgV8xZcwB9fUJVnqA07to+6/N+qkiAIb2EQ7dCATG+gew4m6qsJnIQJwQ3FJhMhbwxS4EEZqRZdufYbghOp0muYY0oJ4xkuS71M7wVGPh9Q1ZrmSuviKFeR8qROhd2wjxpIt2kekwJluYRvS9BKn/+A8NmxQ5z6cQ6Ov5fP/56A6iPkaQa65+wSkn7zi0bCdMd8JCfiFmtjw5IpKx9GOVDkm1Io4BH4oLCwgRfy5cT+HCBVfb4wS3jIfH4PHHkUHRPB11yk0OtKVnvS9EV3S9NlgvjHPmafNE+ax1RgnXyBME8+UtzfguIAThU6SOGyIqHYmESekz5WyKzc3u9dQu7ttorvdzXWc6xiXsaOHD3cf6mp1xw3/y67C1eoi3HFRrrhaXdUgd4yRgcrF6jrGZZyrcrH661mrjiw9MiYrdVAqQXcvz717uW63vlu3HYscj/CWfuWQ0ftu+/Ht7w826GfsZ79xSn2MiVeqNv9eYWAZOvXP1sFlVxbOCEkkBQuvlA3eOpU3wt/nO3KwdfqaL13Gebb55mSxvIM0r/X9w+Ozb3IKD5g3/k+Si1UiYHtc4sFJTjZI3bzx74RcPKPTuSzFV7KlThA6/ZhIJqnDLn6SzARud1GSV243Vqeceo98u4UyzYJoXpglHjwyW8hn86TqN1sJYabZhkapyYN80jmxjxhNtaHGAG2c0QXipWMwiAbqmEA9PXFIy2qpwqAvZZSSVCt1DJdRkqmgEodf7aCRForJkKCBpcqop1zy1eOYidfWt1BGOg00U0H32SjxOOg7Zr6BtNW1w1DiaaGq51eNLNIpIJOsFFnCMAbRmT5DraUdBBVksZYJNI+UNdle4zvfITCV5jv+UyObTLLJRWMIlZShreEaQLME1RJvlKEjw5HB7wotbHYiSp4KqnrzW5lIOgbingwm3RpHi6/tp1eX09AU02fxSV89psbNjWT/FbocAAA=) format('woff2')}.f-mono{font-family:'mono'}
+.rise{animation:rise 1.1s cubic-bezier(.16,1,.3,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}}
+.fade{animation:fade 1s ease both}
+@keyframes fade{from{opacity:0}}
+.float{animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.breathe{transform-box:fill-box;transform-origin:center;animation:breathe 5s ease-in-out infinite}
+@keyframes breathe{50%{transform:scaleX(.84);opacity:.6}}
+.ping{transform-box:fill-box;transform-origin:center;animation:ping 2.2s cubic-bezier(0,0,.2,1) infinite}
+@keyframes ping{from{transform:scale(1);opacity:.7}to{transform:scale(3);opacity:0}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .7s cubic-bezier(.34,1.56,.64,1) both}
+@keyframes pop{from{transform:scale(0)}}
+.blink{animation:blink 2.7s ease-in-out infinite}
+@keyframes blink{50%{opacity:.2}}
+.bar{transform-box:fill-box;transform-origin:center;animation:bar 1.2s ease-in-out infinite}
+@keyframes bar{50%{transform:scaleY(.22)}}
+.swing{transform-box:fill-box;transform-origin:50% 0;animation:swing 3.2s ease-in-out infinite}
+@keyframes swing{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+.draw{animation:draw 2s cubic-bezier(.65,0,.35,1) both}
+@keyframes draw{from{stroke-dashoffset:1000}}
+.slide{animation:slide linear infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><rect x=".5" y=".5" width="107" height="43" rx="21.5" fill="#121110" stroke="#3d3934"/><text x="22" y="27" fill="#f1ebe0" text-anchor="start" letter-spacing="1.4" xml:space="preserve" ><tspan class="f-mono" font-size="13">EMAIL</tspan></text><path d="M77.8 26.2L86.2 17.8M80.11 17.8H86.2V23.89" fill="none" stroke="#f1ebe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>

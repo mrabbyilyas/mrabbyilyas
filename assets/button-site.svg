@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 44" width="200" height="44" role="img" aria-label="mrabbyilyas.com"><title>mrabbyilyas.com</title><style>@font-face{font-family:'mono';src:url(data:font/woff2;base64,d09GMgABAAAAAAUMAA8AAAAACNwAAASzAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbHhwoBmA/U1RBVEQAbBEICoZQhTELHAABNgIkAx4EIAWEQAcgGxwHyAQe+HfTPzcE2iYVnWiqRjuHGVDzYFNKTbE9ERPguf+Z5OpeX99lJuAZrxrAqL2kbzalViqNWqFowAIYLKWC5gt90E+sfxi7tMxcBJAO65AQFCoWwMAqVCmcLV1DpCLnmgyjilSGMowSzM6dCUTmyKRrqkyXJa/4FTNIp0heqO50+MRerGJbSBKkoSVcjWRki8f/Qb3MPeDo4ik0fKZf/v8A5O3iFA0KXvhmEqR86QWXhmWK2alIQL5FlQQPjE9ExrZlMhKYEaUI8pExYZ8kyqYtNjKIleLXBdMQTc3FVcSOUWai9+aSjQkJjToctNNNL4P4liVOkh2kizFw0PjJ+NR4ynjUeNh4yHjAuLv7emq2QBgGWR5mYFwxhB1+hxYxWlIjTwilqUg1jXQsFD8gyylyblramvSU7OzspWmNabKekmEZzkhJV/epe5S9uz2eDF01q6cmOCoed4pTE+4kxa2e+p44OqkoAlDvUu+wAqckk1967z311IQ+lEwqp8TjHJVIqKe+59HjcVWoZkVkoMgqqlmVBzII+pfKilndo+xTyWCBt7ZkGKf71Pfar+pEPoJTzUsSCV1X3Ffc8YqiSKZJiJs63Z6r+xvz6p3i6DuS7mRrB/ShK555QzklzlG3J9oTrf8Dppr8qm+X6pVUodJ4/gNnPbCnsWaghmVvPn/Sm8/P3uC9wWt5aO1+1u5n8IU3ogeP7qopd3ZVbLfs8FbVdjXtPWoscljgCNeO9Y3Nzk07jwiM74w3NMZ3jlOX5Y757NeHwvbrY3534Lgj80Oz5sz2jq6mZte24oO9nuKDXNuaN3QPpvfNyDkHH38iPcFbuCX4WPAWbgky/MLkFX+fG8SkH/zPVYOjL5x27IqKY1ec9sLo4FUH/0N1lh7R7dfHDrJfH9F1Parbrj8oZrs+qg8FrM4txQf7/cWHOG1Wq9NWfIjfX3ywcwuOFz5ZPGpxuKmmu636mC3tUpvN7Mh5eTLr/qKDc2oOKzgQ2umyb9zksu0M0ZzVHbI75szt05bhSpejqLbmgX807ZPuso78trxd1sqODfaNu6eaOjsmNtnGLM5pc1vtPVVbnBvq1zzkWvPF0JKgrbp/82a7b66BP0veuTpyzrpz1kXevrqE74876TgAjO8RgLg3eu1j6dn7smy/pZpM3wN8473FA/Bt08ZbjVf+j0lnyBWABQkAAaZf/v8AJK/xyn+PSGeYvr8Nn0jiV6ySl2UMUkIPwzRQgoNqSoGJ7097dob4kyoCd71Gld5UZzoXeCr5FfHcIGSJIyjiS45EJnGOifVc0S0Xc8ys4DiOBY0RdibrqVOJYTRFiKxkLiGlTAXK6G0wwDyzBJijnQg9bYZJgnQzyghMRJnFw9AwNc4EEaM8wgJhNlNPwzxOjDLHGO2ZI9JQnJgfZpQ65gkxTmtjGroidFcZnqe2c+KmoSvMZMFvNRqpYwMNNHqCW3AzgIOulroiAzAOR2cIEKqo0xhhDR1L8B1MaIl/qWGlASvNaAwxwShaF44+QjRM0RiMwg4s3hjxUiGM+1dskmucycLsKMPUEdxwVz2xRYs3C2eK5Z3rajdTU9cIK998ERc1LsP6J9SoAAA=) format('woff2')}.f-mono{font-family:'mono'}
+.rise{animation:rise 1.1s cubic-bezier(.16,1,.3,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}}
+.fade{animation:fade 1s ease both}
+@keyframes fade{from{opacity:0}}
+.float{animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.breathe{transform-box:fill-box;transform-origin:center;animation:breathe 5s ease-in-out infinite}
+@keyframes breathe{50%{transform:scaleX(.84);opacity:.6}}
+.ping{transform-box:fill-box;transform-origin:center;animation:ping 2.2s cubic-bezier(0,0,.2,1) infinite}
+@keyframes ping{from{transform:scale(1);opacity:.7}to{transform:scale(3);opacity:0}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .7s cubic-bezier(.34,1.56,.64,1) both}
+@keyframes pop{from{transform:scale(0)}}
+.blink{animation:blink 2.7s ease-in-out infinite}
+@keyframes blink{50%{opacity:.2}}
+.bar{transform-box:fill-box;transform-origin:center;animation:bar 1.2s ease-in-out infinite}
+@keyframes bar{50%{transform:scaleY(.22)}}
+.swing{transform-box:fill-box;transform-origin:50% 0;animation:swing 3.2s ease-in-out infinite}
+@keyframes swing{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+.draw{animation:draw 2s cubic-bezier(.65,0,.35,1) both}
+@keyframes draw{from{stroke-dashoffset:1000}}
+.slide{animation:slide linear infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><rect x=".5" y=".5" width="199" height="43" rx="21.5" fill="#c8f53c" stroke="#c8f53c"/><text x="22" y="27" fill="#121110" text-anchor="start" letter-spacing="1.4" xml:space="preserve" ><tspan class="f-mono" font-size="13">MRABBYILYAS.COM</tspan></text><path d="M169.8 26.2L178.2 17.8M172.11 17.8H178.2V23.89" fill="none" stroke="#121110" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
