@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.8 44" width="144.8" height="44" role="img" aria-label="Juraganin"><title>Juraganin</title><style>@font-face{font-family:'mono';src:url(data:font/woff2;base64,d09GMgABAAAAAAQsAA8AAAAAB4AAAAPTAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbHhwoBmA/U1RBVEQAZBEICoQMgzALFAABNgIkAxYEIAWEQAcgGwsGyAQC/t2seY9A22RdsmYVF3zXKTW2buydw7kI4dz/THJwTV37wFMfcGofdV8r6qSIAhvYRDvNBzpg3gM8wyBe6pryEcAcDKdEqHxMmgSVNVgtSstrncSi7HSY5jGkB1uZl5i7qMs31MM8reOYxYr0il+xggxJLwo1uYk4RLIoCEtBHG3gaqS5QDz+D8F9bntJLU+h47L88v8HoBSKkI7IC9+MglwiX3Dr2J4xNxYJLEllm0Oj7R1Dj3YgMOTrElsQLEHBwn4ptj43HmcRq8WvglHkLefjx+C5VqHRvYAFY6t1iqigmnrsuESRPU3VGfN78ynzUfMR80HzPvOeK3cGuQJhmswvSbGwyASN4HxPjJii8iTkD8A1vPzroCgxyrY5C+csj1vkiplra54bM0c7rB1UDx3weOa6fKFoVBx77z0tbBguZzSqhiIRgoahhd97b5MqNKm6t10ViWhCs6piLqqi4QtFo26PYWjh94RFk8GIZtUObrZqinpom6JZtbBBMBJJXWYYLpfqvuKOV1RVWrTwe+JYVFV9oaiwaDJoaOH3hEWTwUjS+Q+c9cDBpN323ax48/lT3ny++wbvDV7bQ+uPsP4IO+fXDTtKrhsfLLh+ZJ+jpDWrNDCvvMs2r7C8Liu5PH/zuNezZawyPzW+KH6zc/ll+/876lKuueqaxKa6eOr9t3CL/zH/LdziZ9H8io7c7H5R1x4j7EUNxcWF9Y1GwBibPoXSF4J/71t8uP2F4N/7lhyh5IVP+oP9zSm76yp3HZdTJStzrSULXw7Mv3/j+MLdU0tHB4rL8jKzynKLB9g1f2A2PPlm4N36MntJSZm9/t3Am5OzYQBMmCYH7h2+NbXg88Pzc3+LtVi+hxTfeG/xOCe/Tcm81Xzl/xF5hrIdsE0iYmKRE7ZOes1X/ntEnnFGe/CZFL+SLL2sYDP1bKWUErKnZG6c+JOd+CZ2B5HT0jWHC0pOmUDeG4Ti6gUb+VIvmUdEbyGdK8aV/XorqzhBb0OnRTePdOI5cR9xI8lXq5fJt6hV2KodAju9dOOjhyqGtEVdBPBTRystmBymG4+OYrqdDobiyiH6GCSbBA16OdlKD22at4ehM/He6kFaiaeXAdqpOBtF9xB1x8z2sufqcjeK7kECe77VSSKeDBJJKpE5uLFTQu1A15LboR3nu/AxcKRF1811vkSCf5wBib/USSaRZFLRcdJBK/o1nI0MaHBU4/1tKGL8w+BSYZCnb/9I7nYCe3OHaSYe/wd3JzAiGv9YfNd++uqWPR9TjD+L37GRYWbMvIzkDbAjAAAA) format('woff2')}.f-mono{font-family:'mono'}
+.rise{animation:rise 1.1s cubic-bezier(.16,1,.3,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}}
+.fade{animation:fade 1s ease both}
+@keyframes fade{from{opacity:0}}
+.float{animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.breathe{transform-box:fill-box;transform-origin:center;animation:breathe 5s ease-in-out infinite}
+@keyframes breathe{50%{transform:scaleX(.84);opacity:.6}}
+.ping{transform-box:fill-box;transform-origin:center;animation:ping 2.2s cubic-bezier(0,0,.2,1) infinite}
+@keyframes ping{from{transform:scale(1);opacity:.7}to{transform:scale(3);opacity:0}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .7s cubic-bezier(.34,1.56,.64,1) both}
+@keyframes pop{from{transform:scale(0)}}
+.blink{animation:blink 2.7s ease-in-out infinite}
+@keyframes blink{50%{opacity:.2}}
+.bar{transform-box:fill-box;transform-origin:center;animation:bar 1.2s ease-in-out infinite}
+@keyframes bar{50%{transform:scaleY(.22)}}
+.swing{transform-box:fill-box;transform-origin:50% 0;animation:swing 3.2s ease-in-out infinite}
+@keyframes swing{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+.draw{animation:draw 2s cubic-bezier(.65,0,.35,1) both}
+@keyframes draw{from{stroke-dashoffset:1000}}
+.slide{animation:slide linear infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><rect x=".5" y=".5" width="143.8" height="43" rx="21.5" fill="#121110" stroke="#3d3934"/><text x="22" y="27" fill="#f1ebe0" text-anchor="start" letter-spacing="1.4" xml:space="preserve" ><tspan class="f-mono" font-size="13">JURAGANIN</tspan></text><path d="M114.6 26.2L123 17.8M116.91 17.8H123V23.89" fill="none" stroke="#f1ebe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
