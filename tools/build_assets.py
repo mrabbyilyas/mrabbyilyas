@@ -126,7 +126,7 @@ JOURNEY = [
     ("Aug 2026", "AtlasPad", "Freelance · Germany"),
     ("Oct 2026", "Detarva", "Founder · Indonesia"),
 ]
-JOURNEY_HIGHLIGHT = "Juraganin"
+JOURNEY_HIGHLIGHT = {"Juraganin", "Detarva"}
 
 BUTTONS = [
     ("site", "mrabbyilyas.com", True),
@@ -613,9 +613,9 @@ def journey(theme: str) -> Svg:
             svg.text(tx, base + 43, place, "sans", 14, c["smoke"], anchor),
             "</g>",
         )
-        if title == JOURNEY_HIGHLIGHT:
+        if title in JOURNEY_HIGHLIGHT:
             svg.add(f'<circle class="ping" cx="{x:g}" cy="{line_y}" r="7" fill="{LIME}"/>')
-        fill = LIME if title == JOURNEY_HIGHLIGHT else c["bg"]
+        fill = LIME if title in JOURNEY_HIGHLIGHT else c["bg"]
         svg.add(
             f'<circle class="pop" {delay(wait)} cx="{x:g}" cy="{line_y}" r="7" fill="{fill}" stroke="{c["ink"]}" stroke-width="2"/>'
         )
