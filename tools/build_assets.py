@@ -34,6 +34,21 @@ UA = (
 
 PROJECTS = [
     {
+        "slug": "detarva",
+        "title": "Detarva",
+        "category": "AI detail library",
+        "who": "My startup · Founder, Indonesia · 2026 — now",
+        "flag": "id",
+        "tagline": "Don’t redraw the details you already have.",
+        "metrics": [("96.9%", "detail recall on Indonesian sheets"), ("$0.0033", "per sheet page"), ("175", "commits in 32 days")],
+        "stack": ["Next.js", "Python", "Postgres", "pgvector", "Drizzle", "Docker"],
+        "colors": {"bg": "#2c3fe6", "fg": "#f2efe7", "accent": "#c9ceff", "soft": "#0f100e"},
+        "fonts": {"title": "archivo", "tagline": "serif-i", "body": "archivo-md", "mono": "martian"},
+        # Martian Mono runs large and wide, so its small text sets a size down.
+        "sizes": {"title": 48, "tagline": 26, "mono": 10},
+        "motif": "sheet",
+    },
+    {
         "slug": "second-act-pro",
         "title": "Second Act Pro",
         "category": "AI matching engine",
@@ -109,6 +124,7 @@ JOURNEY = [
     ("Jan 2026", "Daphne", "Freelance · Germany"),
     ("Jul 2026", "Juraganin", "Founder · Indonesia"),
     ("Aug 2026", "AtlasPad", "Freelance · Germany"),
+    ("Oct 2026", "Detarva", "Founder · Indonesia"),
 ]
 JOURNEY_HIGHLIGHT = "Juraganin"
 
@@ -155,7 +171,12 @@ FONTS = {
     "manrope": "Manrope:wght@800",
     "manrope-sb": "Manrope:wght@600",
     "manrope-md": "Manrope:wght@500",
+    "archivo": "Archivo:wght@600",
+    "archivo-md": "Archivo:wght@500",
+    "martian": "Martian+Mono:wght@500",
 }
+# Mono faces have one advance for every glyph: 0.6em unless listed here.
+ADVANCE = {"martian": 0.7}
 
 
 def fetch(url: str) -> bytes:
@@ -180,9 +201,9 @@ def avatar() -> str:
     return "data:image/webp;base64," + base64.b64encode(fetch(AVATAR)).decode()
 
 
-def mono_width(text: str, size: float, spacing: float = 0) -> float:
-    """Every mono face used here has a 0.6em advance, so widths are exact."""
-    return len(text) * (size * 0.6 + spacing)
+def mono_width(text: str, size: float, spacing: float = 0, font: str = "mono") -> float:
+    """Mono faces have a fixed advance (see ADVANCE), so widths are exact."""
+    return len(text) * (size * ADVANCE.get(font, 0.6) + spacing)
 
 
 # ---------------------------------------------------------------- svg
@@ -265,7 +286,7 @@ def arrow(cx: float, cy: float, color: str, size: float = 6, width: float = 2.2)
 def pill(svg: Svg, x, y, label, font, size, fg, bg=None, stroke=None, pad=14, height=None, spacing=0) -> float:
     """Draw a mono pill and return its width."""
     height = height or size * 2.6
-    width = mono_width(label, size, spacing) + pad * 2
+    width = mono_width(label, size, spacing, font) + pad * 2
     fill = bg or "none"
     line = f' stroke="{stroke}"' if stroke else ""
     svg.add(
@@ -418,6 +439,32 @@ def motif(svg: Svg, kind: str, colors: dict) -> None:
             svg.text(445, 78, "BUKA", "plex", 12, "#fbf1dd", "middle", 1.5),
             "</g>",
         )
+    elif kind == "sheet":
+        # A drawing sheet whose parapet detail gets boxed and called out.
+        x, y = 362, 34
+        ink = f'fill="none" stroke="{fg}" stroke-opacity=".5"'
+        solid = f'fill="{fg}" fill-opacity=".6"'
+        svg.add(
+            f'<rect x="{x}" y="{y}" width="96" height="70" rx="2" fill="{soft}" fill-opacity=".16" stroke="{fg}" stroke-opacity=".75"/>',
+            f'<rect x="{x + 4}" y="{y + 4}" width="88" height="62" fill="none" stroke="{fg}" stroke-opacity=".3"/>',
+            # Title block.
+            f'<path d="M{x + 4} {y + 54}H{x + 92}M{x + 60} {y + 54}V{y + 66}M{x + 76} {y + 54}V{y + 66}" {ink}/>',
+            f'<path d="M{x + 9} {y + 60}H{x + 44}M{x + 64} {y + 60}H{x + 72}" stroke="{fg}" stroke-opacity=".35" stroke-width="2"/>',
+            # Elevation on the left, roof parapet section on the right.
+            f'<path d="M{x + 8} {y + 46}H{x + 46}M{x + 11} {y + 46}V{y + 22}L{x + 27} {y + 12}L{x + 43} {y + 22}V{y + 46}" {ink}/>',
+            f'<rect x="{x + 16}" y="{y + 27}" width="8" height="10" {ink}/><rect x="{x + 30}" y="{y + 27}" width="8" height="10" {ink}/>',
+            f'<rect x="{x + 52}" y="{y + 36}" width="28" height="4" {solid}/>',
+            f'<rect x="{x + 78}" y="{y + 18}" width="4" height="32" {solid}/>',
+            f'<rect x="{x + 75}" y="{y + 14}" width="10" height="3" {solid}/>',
+        )
+        svg.add(
+            f'<rect class="blink" x="{x + 70}" y="{y + 28}" width="18" height="18" rx="1.5" fill="{accent}" fill-opacity=".22"'
+            f' stroke="{accent}" stroke-width="1.5" stroke-dasharray="3 2"/>',
+            f'<path d="M{x + 88} {y + 37}H{x + 98}" stroke="{accent}" stroke-width="1.2"/>',
+            f'<circle cx="{x + 106}" cy="{y + 37}" r="8" fill="{colors["bg"]}" stroke="{accent}" stroke-width="1.5"/>',
+            f'<path d="M{x + 98} {y + 37}H{x + 114}" stroke="{accent}" stroke-width="1.2"/>',
+            f'<circle class="ping" cx="{x + 106}" cy="{y + 33}" r="1.8" fill="{accent}"/><circle cx="{x + 106}" cy="{y + 33}" r="1.8" fill="{accent}"/>',
+        )
     elif kind == "wave":
         heights = [10, 22, 36, 18, 44, 30, 48, 24, 38, 16, 26, 12]
         for i, height in enumerate(heights):
@@ -450,23 +497,25 @@ def card(project: dict) -> Svg:
         f'<line x1="32" y1="202" x2="468" y2="202" stroke="{fg}" stroke-opacity=".14"/>',
     )
 
+    small = sizes.get("mono", 11)
+    chars = int(140 // mono_width("0", small, font=mono))
     for i, (value, label) in enumerate(project["metrics"]):
         x = 32 + i * 152
         svg.add(f'<g class="rise" {delay(0.3 + i * 0.1)}>', svg.text(x, 244, value, fonts["title"], 34, fg))
-        for line, chunk in enumerate(textwrap.wrap(label, 21)):
-            svg.add(svg.text(x, 266 + line * 14, chunk, mono, 11, fg, attrs='fill-opacity=".6"'))
+        for line, chunk in enumerate(textwrap.wrap(label, chars)):
+            svg.add(svg.text(x, 266 + line * 14, chunk, mono, small, fg, attrs='fill-opacity=".6"'))
         svg.add("</g>")
 
     x, limit = 32, 424
     stack = project["stack"]
     for i, name in enumerate(stack):
         rest = len(stack) - i - 1
-        width = mono_width(name, 11) + 20
-        reserve = mono_width(f"+{rest}", 11) + 26 if rest else 0
+        width = mono_width(name, small, font=mono) + 20
+        reserve = mono_width(f"+{rest}", small, font=mono) + 26 if rest else 0
         if x + width + reserve > limit:
-            pill(svg, x, 296, f"+{len(stack) - i}", mono, 11, fg, stroke=f"{fg}40", pad=10, height=22)
+            pill(svg, x, 296, f"+{len(stack) - i}", mono, small, fg, stroke=f"{fg}40", pad=10, height=22)
             break
-        x += pill(svg, x, 296, name, mono, 11, fg, stroke=f"{fg}40", pad=10, height=22) + 6
+        x += pill(svg, x, 296, name, mono, small, fg, stroke=f"{fg}40", pad=10, height=22) + 6
 
     svg.add(f'<circle cx="452" cy="307" r="19" fill="{accent}"/>', arrow(452, 307, bg, 5.5, 2.2))
     svg.add("</g>")
@@ -477,10 +526,10 @@ def card(project: dict) -> Svg:
 
 def section_header(theme: str) -> Svg:
     c = THEMES[theme]
-    svg = Svg(1000, 118, "Now shipping: four products, three countries.")
+    svg = Svg(1000, 118, "Now shipping: five products, three countries.")
     svg.add(
         svg.text(4, 34, "(NOW SHIPPING)", "mono", 13, c["page_smoke"], spacing=2.4),
-        svg.rich(0, 92, [("Four products. ", "sans-sb", 44), ("Three countries.", "serif-i", 52)], c["page_ink"], spacing=-0.6),
+        svg.rich(0, 92, [("Five products. ", "sans-sb", 44), ("Three countries.", "serif-i", 52)], c["page_ink"], spacing=-0.6),
         svg.text(996, 92, "EACH CARD OPENS ITS CASE STUDY", "mono", 12, c["page_smoke"], "end", 1.6),
     )
     return svg
@@ -542,14 +591,15 @@ def journey(theme: str) -> Svg:
         svg.rich(54, 102, [("From data intern ", "sans-sb", 36), ("to founder.", "serif-i", 44)], c["ink"], spacing=-0.8),
     )
 
-    first, last, line_y = 72, 860, 232
+    # The first label is left-aligned and long, so the first gap gets extra room.
+    first, second, last, line_y = 72, 200, 860, 232
     svg.add(
         f'<line class="draw" x1="{first}" y1="{line_y}" x2="900" y2="{line_y}" stroke="{c["ink"]}" stroke-opacity=".3"'
         f' stroke-width="2" stroke-dasharray="1000"/>',
     )
-    step = (last - first) / (len(JOURNEY) - 1)
+    step = (last - second) / (len(JOURNEY) - 2)
     for i, (when, title, place) in enumerate(JOURNEY):
-        x = first + i * step
+        x = first if i == 0 else second + (i - 1) * step
         above = i % 2 == 0
         anchor, tx = ("start", x - 12) if i == 0 else ("middle", x)
         base = line_y - 82 if above else line_y + 36

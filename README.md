@@ -21,15 +21,17 @@
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/work-dark.svg">
-  <img alt="Now shipping: four products, three countries." src="assets/work-light.svg" width="100%">
+  <img alt="Now shipping: five products, three countries." src="assets/work-light.svg" width="100%">
 </picture>
 </p>
 
 <p align="center">
+  <a href="https://mrabbyilyas.com/projects/detarva"><img alt="Detarva, my second startup: an AI detail library for Indonesian architecture and engineering firms. 96.9% detail recall on Indonesian sheets, $0.0033 per sheet page, 175 commits in 32 days." src="assets/card-detarva.svg" width="49%"></a>
   <a href="https://mrabbyilyas.com/projects/second-act-pro"><img alt="Second Act Pro, an AI matching engine for Craig in the United States. 9 vectors per CV, a 4 stage match funnel, 25 API routes." src="assets/card-second-act-pro.svg" width="49%"></a>
-  <a href="https://mrabbyilyas.com/projects/daphne"><img alt="Daphne, a cognitive companion for Ralf in Germany. 30 of 30 evals passing, median down from 32.3s to 4.8s, 438 commits." src="assets/card-daphne.svg" width="49%"></a>
   <br>
+  <a href="https://mrabbyilyas.com/projects/daphne"><img alt="Daphne, a cognitive companion for Ralf in Germany. 30 of 30 evals passing, median down from 32.3s to 4.8s, 438 commits." src="assets/card-daphne.svg" width="49%"></a>
   <a href="https://mrabbyilyas.com/projects/juraganin"><img alt="Juraganin, my startup: an AI store builder for Indonesian small businesses. 660 commits in 11 weeks, 20 agent tools, 80 test files." src="assets/card-juraganin.svg" width="49%"></a>
+  <br>
   <a href="https://mrabbyilyas.com/projects/atlaspad"><img alt="AtlasPad, voice-first clinical docs for Ralf in Germany. 10 voice tools, 510 patient vectors, 70 ICD-10 dimensions." src="assets/card-atlaspad.svg" width="49%"></a>
 </p>
 
@@ -48,7 +50,7 @@
 <a href="https://mrabbyilyas.com/about">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg">
-    <img alt="Journey: Computer Science at Bina Nusantara University; Data Intern at Comms8 (May 2024); AI/ML Engineer at Comms8 (Mar 2025); Full-Stack Developer at Growthmarketing.tw (Aug 2025); Second Act Pro (Oct 2025); Daphne (Jan 2026); founded Juraganin (Jul 2026); AtlasPad (Aug 2026)." src="assets/journey-light.svg" width="100%">
+    <img alt="Journey: Computer Science at Bina Nusantara University; Data Intern at Comms8 (May 2024); AI/ML Engineer at Comms8 (Mar 2025); Full-Stack Developer at Growthmarketing.tw (Aug 2025); Second Act Pro (Oct 2025); Daphne (Jan 2026); founded Juraganin (Jul 2026); AtlasPad (Aug 2026); founded Detarva (Oct 2026)." src="assets/journey-light.svg" width="100%">
   </picture>
 </a>
 </p>
